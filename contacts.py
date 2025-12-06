@@ -58,4 +58,16 @@ def add_contact(name, phone):
     }
     phonebook.append(contact)
     print(">> Đã thêm liên hệ thành công!")
+    
+    phonebook = []   # danh sách toàn cục
+
+def view_contacts():
+    if len(phonebook) == 0:
+        print(">> Danh sách liên hệ trống!")
+        return
+
+    print("=== DANH SÁCH LIÊN HỆ ===")
+    for contact in phonebook:
+        print(f"- {contact['name']} : {contact['phone']}")
+
 
