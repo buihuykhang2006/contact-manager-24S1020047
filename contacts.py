@@ -70,4 +70,17 @@ def view_contacts():
     for contact in phonebook:
         print(f"- {contact['name']} : {contact['phone']}")
 
+phonebook = []   # danh sách toàn cục
+
+def Contacts(name):
+    found = False
+
+    for contact in phonebook:
+        if contact['name'].lower() == name.lower():
+            print(f"Số điện thoại của {contact['name']}: {contact['phone']}")
+            found = True
+            break
+
+    if not found:
+        print("Không tìm thấy")
 
