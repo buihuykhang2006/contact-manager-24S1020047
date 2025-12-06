@@ -49,3 +49,13 @@ def main():
 # Chạy chương trình
 if __name__ == "__main__":
     main()
+phonebook = []   # danh sách toàn cục
+
+def add_contact(name, phone):
+    contact = {
+        'name': name,
+        'phone': phone
+    }
+    phonebook.append(contact)
+    print(">> Đã thêm liên hệ thành công!")
+
